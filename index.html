@@ -66,11 +66,11 @@
             var scene = new BABYLON.Scene(engine);
         
             // Create a default skybox with an environment.
-            var hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("textures/environment.dds", scene);
-            var currentSkybox = scene.createDefaultSkybox(hdrTexture, true);
+            //var hdrTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("textures/environment.dds", scene);
+            //var currentSkybox = scene.createDefaultSkybox(hdrTexture, true);
         
             // Append glTF model to scene.
-            BABYLON.SceneLoader.Append("scenes/BoomBox/", "BoomBox.gltf", scene, function (scene) {
+            BABYLON.SceneLoader.Append("scenes/30gal/", "30gal.glb", scene, function (scene) {
                 // Create a default arc rotate camera and light.
                 scene.createDefaultCameraOrLight(true, true, true);
         
